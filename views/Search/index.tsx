@@ -15,7 +15,7 @@ export function SearchView() {
   const contactsBySearchText = useMemo(() => {
     if (
       deferredSearchText.search(
-        /[\u1100-\u11FF\u3130-\u318F\uA960-\uA97F\uAC00-\uD7AF\uD7B0-\uD7FF]/g
+        /[\u1100-\u11FF\u3130-\u318F\uA960-\uA97F\uAC00-\uD7AF\uD7B0-\uD7FF]/g // naive implementation for CJK searching support
       ) >= 0
     ) {
       return contactList.filter((contact: any) =>

@@ -1,6 +1,6 @@
-import { Link, Star } from "@tamagui/lucide-icons";
+import { Star } from "@tamagui/lucide-icons";
 import { useRef, useState } from "react";
-import { Alert, Linking } from "react-native";
+import { Linking } from "react-native";
 import { ListItem, Separator } from "tamagui";
 import { useFavoriteSetStore } from "../../stores";
 

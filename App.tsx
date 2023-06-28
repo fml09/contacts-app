@@ -1,17 +1,14 @@
 import { StatusBar } from "expo-status-bar";
-import { Linking, SafeAreaView, useColorScheme } from "react-native";
+import { SafeAreaView, useColorScheme } from "react-native";
 import { Heading, Spacer, TamaguiProvider, Theme, YStack } from "tamagui";
 import config from "./tamagui.config";
 import { useFonts } from "expo-font";
-// import Contacts from "react-native-contacts";
-import * as Contacts from "expo-contacts";
 
 import { SearchBar } from "./components/SearchBar";
 import { DefaultView } from "./views/Default";
 import { SearchView } from "./views/Search";
 import { useViewTypeStore } from "./stores";
 import { ViewType } from "./types";
-import { useEffect } from "react";
 import { ContactListProvider } from "./stores/contact-list";
 
 export default function App() {

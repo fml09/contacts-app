@@ -14,8 +14,8 @@ export function DefaultView() {
   const contactList = useContactList();
 
   const contactListWithFavorite = useMemo(() => {
-    return contactList.filter((contact) => {
-      if (contact.type !== ContactListType.ContactItem) return false; // TODO: fix this
+    return contactList.filter((contact: any) => {
+      // TODO : FIX THIS
       if (favorites.has(contact.id)) return true;
       return false;
     });
